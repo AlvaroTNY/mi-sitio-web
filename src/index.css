@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root{
+    --text-color: #111111;
+    --bg-color: #ffffff;
+    --primary: #00c2ff;
+    --secondary: #DD0BFF;
+    }  
+    .dark {
+        --text-color: #ffffff;
+        --bg-color: #111111;
+        --primary: #00c2ff;
+        --secondary: #DD0BFF;
+    } 
+    body{
+        color: var(--text-color);
+        background-color: var(--bg-color);
+    }
+/* container => mx-auto px-4 sm:px-12 */
+
+.animated-wrapper{
+    animation-name: move-wrapper;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    position: absolute;
+}
+
+@keyframes move-wrapper{
+    0%{
+        transform: translate(150%, 30%) rotate(0) scale(0.8);
+    }
+    50%{
+        transform: translate(60vw, 0vh) rotate(150deg) scale(1.2);
+    }
+    to{
+        transform:  translate(40vw, 40vh) rotate(0deg) scale(0.8);
+    }
+}
