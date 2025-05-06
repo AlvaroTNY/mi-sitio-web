@@ -3,7 +3,8 @@ export const cardItems = [
         id: 1,
         img: "https://images.vexels.com/media/users/3/140692/isolated/svg/72d1f12edf758d24f5b6db73bac4f297.svg",
         title: "24/7 Support",
-        text: "Online chat. Response in 1-2 minutes"
+        text: "Online chat. Response in 1-2 minutes",
+        url: "https://www.youtube.com"
     },
     {
         id: 2,

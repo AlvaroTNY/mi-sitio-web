@@ -1,12 +1,13 @@
 import React from 'react'
 
-function IconCard({img, title, text}) {
+function IconCard({img, title, text, url}) {
   return (
     <div className='flex flex-col items-center gap-2'>
         <img src={img} alt={title} className="w-30 h-30 " />
         <h3 className='font-semibold text-3xl'>{title}</h3>
         <p className='text-lg max-w-60 text-center'>{text}</p>
         <button
+        onClick={() => window.location.href = "https://www.kali.org/"}
         style={{
                 "--hover-text": "var(--primary)",
                 "--hover-border": "var(--secondary)"

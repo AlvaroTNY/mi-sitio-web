@@ -29,14 +29,15 @@ const Hero = () => {
                             </p>
                             {/* buttons */}
                             <div className="flex gap-6">
-                                <button
-                                    style={{
-                                        "--hover-text": "var(--primary)",
-                                        "--hover-border": "var(--secondary)"
-                                    }}
-                                    className="bg-gradient-to-r from-[var(--hover-text)] to-[var(--hover-border)] duration-300 py-2 px-6 text-white rounded-full hover:scale-105 cursor-pointer"
+                            <button
+                                onClick={() => window.location.href = "https://www.dota2.com/home"}  // Redirige al hacer clic
+                                style={{
+                                    "--hover-text": "var(--primary)",
+                                    "--hover-border": "var(--secondary)"
+                                }}
+                                className="bg-gradient-to-r from-[var(--hover-text)] to-[var(--hover-border)] duration-300 py-2 px-6 text-white rounded-full hover:scale-105 cursor-pointer"
                                 >
-                                    Get Started
+                                Get Started
                                 </button>
 
                                 <button className="flex items-center gap-2 cursor-pointer">
